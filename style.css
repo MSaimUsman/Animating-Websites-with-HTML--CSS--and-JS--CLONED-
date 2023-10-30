@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+    height: 25px;
+    width: 25px;
+    background-color: #d2fd5a;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 108px;
+    gap: 44px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+    /* 1st hero silder position also fixed*/
+    /* 2nd also we have to set the header to position fixed */
+    /* to do this we need to add the zindex value so the header will show*/
+}
+
+#nav img {
+    height: 67px;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page1 h1 {
+    font-size: 90px;
+    font-weight: 900;
+    position: relative;
+    margin-top: 29px;
+
+}
+
+#page1 h1::before {
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: rgb(33, 42, 29);
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px #d2fd5a;
+    z-index: -1;
+}
+
+
+#page1 h2 {
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 250%;
+}
+
+#page1 p {
+    font-size: 18.5px;
+    font-weight: 430;
+    width: 50%;
+}
